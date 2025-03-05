@@ -1,2 +1,2 @@
-# SQL-DB-into-script
-Simple SQL querry that lets extract entire data base into script
+# SQL querry data base into script
+Simple SQL querry that extracts entire data base into script
