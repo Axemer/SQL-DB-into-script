@@ -1,4 +1,3 @@
--- Генерация CREATE TABLE
 SELECT 
     'CREATE TABLE "' || table_schema || '"."' || table_name || '" (' || E'\n' ||
     STRING_AGG(
@@ -20,7 +19,6 @@ GROUP BY table_schema, table_name
 
 UNION ALL
 
--- Генерация INSERT
 SELECT 
     'INSERT INTO "' || table_schema || '"."' || table_name || '" (' ||
     STRING_AGG('"' || column_name || '"', ', ' ORDER BY ordinal_position) ||
